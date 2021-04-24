@@ -1,0 +1,81 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+  background: url("/tribute/3595451.jpg");
+  background-size: 90vw 70vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 190px;
+  background-attachment: fixed;
+  background-color: rgb(161, 153, 153);
+  margin: 0;
+}
+.front {
+  margin: 70vh 5% 0 5%;
+}
+#main {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.5em;
+}
+.time-line {
+  text-align: left;
+  font-size: 0.6em;
+  font-weight:400;
+}
+.design:hover {
+  border: 2px solid red;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: auto;
+  color: white;
+  background: black;
+  animation-name: design-main;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.title:hover {
+  animation-name: title-box;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes title-box {
+  0% {
+    color: red;
+    transform: translateX(0px);
+  }
+  25% {
+    color: blue;
+    transform: translateX(40px);
+  }
+  75% {
+    color: green;
+    transform: translateX(-40px);
+  }
+  100% {
+    color: red;
+    transform: translateX(0);
+  }
+}
+@keyframes design-main {
+  0% {
+    color: red;
+    transform: scale(1.1);
+    margin: 0;
+    display: block;
+    opacity: 0.6;
+  }
+  25% {
+    color: blue;
+    opacity: 0.7;
+  }
+  75% {
+    color: green;
+    opacity: 0.8;
+  }
+  100% {
+    color: red;
+    opacity: 1;
+  }
+}
